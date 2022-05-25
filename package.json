@@ -1,0 +1,21 @@
+{
+  "name": "@widget-platform/dev-proxy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "live": "nodemon index.js",
+    "proxy": "node index.js",
+    "default-proxy": "npm run proxy -- --port=4200 --host=http://localhost:4200 --app_1=http://dev.server:100 --app_2=http://dev.server:200\n"
+  },
+  "author": "tarasovm2013@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "http-proxy-middleware": "^2.0.6",
+    "requestify": "^0.2.5"
+  },
+  "description": ""
+}
